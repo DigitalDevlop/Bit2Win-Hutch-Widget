@@ -1,24 +1,44 @@
+.App{
+  height: 100vh;
+}
+
 .widget-container {
   position: relative;
   display: inline-block;
+  width: 100%; /* Ensure the container takes up the full width */
+  height: 100%; /* Ensure the container takes up the full height */
+  background-image: url("/public/assets/1.jpg"); /* Set the background image */
+  background-size: cover; /* Ensure the background image covers the container */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: center bottom; 
 }
 
-.image {
-  width: auto;
+/* .image {
+  width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 80%;
   display: block;
-}
+} */
 
 .subscribe-button {
+  font-size: larger;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: red;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
   cursor: pointer;
   outline: none;
+}
+.back-button {
+  background-color: blueviolet;
+  color: white;
+  position: fixed;
+  top: 90%;
+  left: 23.5%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Set a high z-index to ensure it's on top of the iframe */
 }
