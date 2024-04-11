@@ -7,38 +7,77 @@
   display: inline-block;
   width: 100%; /* Ensure the container takes up the full width */
   height: 100%; /* Ensure the container takes up the full height */
-  background-image: url("/public/assets/1.jpg"); /* Set the background image */
+  background-image: url("/public/assets/1.jpg"); /* Set the default background image */
   background-size: cover; /* Ensure the background image covers the container */
   background-repeat: no-repeat; /* Prevent background image from repeating */
   background-position: center bottom; 
 }
 
-/* .image {
-  width: 100%;
-  max-width: 100%;
-  height: 80%;
-  display: block;
-} */
-
 .subscribe-button {
-  font-size: larger;
+  font-size: xx-large;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: red;
+  background-color: rgb(255, 19, 2);
   color: white;
-  padding: 20px 30px;
-  border: none;
+  padding: 15px 20px;
+  border: 20%;
   cursor: pointer;
-  outline: none;
+  outline: 10%;
+  border-radius: 30px;
 }
+
 .back-button {
   background-color: blueviolet;
   color: white;
   position: fixed;
-  top: 90%;
-  left: 23.5%;
-  transform: translate(-50%, -50%);
+  bottom: 20px; /* Adjusted to place the button above the bottom */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9999; /* Set a high z-index to ensure it's on top of the iframe */
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+/* Media Query for screens smaller than 576px (e.g., mobile phones) */
+@media screen and (max-width: 576px) {
+  .widget-container {
+    background-image: url("/public/assets/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .subscribe-button {
+    font-size: medium; /* Adjust font size for smaller screens */
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+    border-radius: 15px; /* Adjust border radius for smaller screens */
+  }
+}
+
+/* Media Query for screens between 576px and 768px (e.g., larger mobile phones and small tablets) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .subscribe-button {
+    font-size: large; /* Adjust font size for medium-sized screens */
+    padding: 10px 15px; /* Adjust padding for medium-sized screens */
+    border-radius: 20px; /* Adjust border radius for medium-sized screens */
+  }
+}
+
+/* Media Query for screens between 768px and 1024px (e.g., tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .subscribe-button {
+    font-size: large; /* Adjust font size for medium-sized screens */
+    padding: 12px 17px; /* Adjust padding for medium-sized screens */
+    border-radius: 25px; /* Adjust border radius for medium-sized screens */
+  }
+}
+
+/* Media Query for screens larger than 1024px (e.g., desktops) */
+@media screen and (min-width: 1024px) {
+  .subscribe-button {
+    font-size: xx-large; /* Maintain original font size for larger screens */
+    padding: 15px 20px; /* Maintain original padding for larger screens */
+    border-radius: 30px; /* Maintain original border radius for larger screens */
+  }
 }
