@@ -28,10 +28,6 @@
   border-radius: 30px;
 }
 
-body {
-  background-color: rgb(28, 15, 211);
-}
-
 @media only screen and (max-device-width: 600px) {
   /* body {
     background-color: blue;
@@ -44,9 +40,21 @@ body {
   }
 
   .subscribe-button {
-    font-size: medium;
-    padding: 8px 12px;
-    border-radius: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 19, 2);
+    color: white;
+    padding: 30px 20px;
+    border: 10%;
+    cursor: pointer;
+    outline: 10%;
+    border-radius: 30px;
   }
 }
 
