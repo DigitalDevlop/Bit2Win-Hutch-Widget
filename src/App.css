@@ -1,16 +1,16 @@
-.App{
+.App {
   height: 100vh;
 }
 
 .widget-container {
   position: relative;
   display: inline-block;
-  width: 100%; /* Ensure the container takes up the full width */
-  height: 100%; /* Ensure the container takes up the full height */
-  background-image: url("/public/assets/1.jpg"); /* Set the default background image */
-  background-size: cover; /* Ensure the background image covers the container */
-  background-repeat: no-repeat; /* Prevent background image from repeating */
-  background-position: center bottom; 
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/assets/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .subscribe-button {
@@ -28,56 +28,51 @@
   border-radius: 30px;
 }
 
-.back-button {
-  background-color: blueviolet;
-  color: white;
-  position: fixed;
-  bottom: 20px; /* Adjusted to place the button above the bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999; /* Set a high z-index to ensure it's on top of the iframe */
-  padding: 10px 20px;
-  border-radius: 15px;
+body {
+  background-color: rgb(28, 15, 211);
 }
 
-/* Media Query for screens smaller than 576px (e.g., mobile phones) */
-@media screen and (max-width: 576px) {
+@media only screen and (max-device-width: 600px) {
+  /* body {
+    background-color: blue;
+  } */
   .widget-container {
     background-image: url("/public/assets/2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   .subscribe-button {
-    font-size: medium; /* Adjust font size for smaller screens */
-    padding: 8px 12px; /* Adjust padding for smaller screens */
-    border-radius: 15px; /* Adjust border radius for smaller screens */
+    font-size: medium;
+    padding: 8px 12px;
+    border-radius: 15px;
   }
 }
 
-/* Media Query for screens between 576px and 768px (e.g., larger mobile phones and small tablets) */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .subscribe-button {
-    font-size: large; /* Adjust font size for medium-sized screens */
-    padding: 10px 15px; /* Adjust padding for medium-sized screens */
-    border-radius: 20px; /* Adjust border radius for medium-sized screens */
+/* Media Query for screens smaller than 576px (e.g., mobile phones) */
+/* @media only screen and (min-width: 600px) {
+  .widget-container {
+    background-image: url("/public/assets/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-}
+  .subscribe-button {
+    font-size: medium;
+    padding: 8px 12px;
+    border-radius: 15px;
+  }
+} */
 
-/* Media Query for screens between 768px and 1024px (e.g., tablets) */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .subscribe-button {
-    font-size: large; /* Adjust font size for medium-sized screens */
-    padding: 12px 17px; /* Adjust padding for medium-sized screens */
-    border-radius: 25px; /* Adjust border radius for medium-sized screens */
-  }
-}
-
-/* Media Query for screens larger than 1024px (e.g., desktops) */
-@media screen and (min-width: 1024px) {
-  .subscribe-button {
-    font-size: xx-large; /* Maintain original font size for larger screens */
-    padding: 15px 20px; /* Maintain original padding for larger screens */
-    border-radius: 30px; /* Maintain original border radius for larger screens */
-  }
-}
+/* .back-button {
+  background-color: blueviolet;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999; 
+  padding: 10px 20px;
+  border-radius: 15px;
+} */
