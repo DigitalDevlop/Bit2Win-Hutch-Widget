@@ -3,20 +3,20 @@
 }
 
 .widget-container {
-  position: relative;
+  position: relative; /* Use relative position */
   display: inline-block;
   width: 100%;
   height: 100%;
   background-image: url("/public/assets/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top; /* Crop the top */
 }
 
 .subscribe-button {
   font-size: xx-large;
   position: absolute;
-  top: 65%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 19, 2);
