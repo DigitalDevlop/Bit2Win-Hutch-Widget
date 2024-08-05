@@ -16,7 +16,7 @@
 .subscribe-button {
   font-size: xx-large;
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 55%;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 19, 2);
